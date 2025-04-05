@@ -1,0 +1,67 @@
+# This is the config file. It's advisable to restart if any changes are made.
+
+# The URL address to the AUTOMATIC1111 Web UI
+url = "http://127.0.0.1:7860"
+
+# Credentials when using --share and --gradio-auth
+user = "wearesoback"
+pass = ""
+
+# Credentials when using --api-auth
+apiuser = ""
+apipass = ""
+
+# Whether or not to save outputs to disk ("True"/"False")
+save_outputs = "True"
+
+# The directory to save outputs (default = "outputs")
+dir = "outputs"
+
+# The limit of tasks a user can have waiting in queue (at least 1)
+queue_limit = 99
+
+# Whether or not buttons keep generating in batches ("True"/"False")
+batch_buttons = "True"
+
+# Whether or not buttons are restricted to user who requested image ("True"/"False")
+restrict_buttons = "False"
+
+# The maximum value allowed for width/height (keep as multiple of 8)
+max_size = 832
+
+# The resize amount when using context menu Quick Upscale
+quick_upscale_resize = 2.0
+
+# AIYA won't generate if prompt has any words in the ban list
+# Separate with commas; example, ["a", "b", "c"]
+prompt_ban_list = ["Porn", "NSFW", "Hentai", "Pussy", "Fuck", "Bitch", "Slut", "Whore", "Cunt", "BDSM", "Cock", "Fap", "Masturbate", "Blowjob", "Handjob", "MILF", "Threesome", "Gangbang", "Orgy", "Deepthroat", "Sissy", "Shemale", "Swingers", "Pornstar", "Upskirt", "Downblouse", "Erotica", "Dildo", "Vibrator", "Butt plug", "Hardcore", "Softcore", "Sexting", "Cybersex", "Footjob", "Rimjob", "Bukkake", "Swallow", "Creampie", "Bondage", "Domination", "Submission", "Sadism", "Masochism", "Spanking", "Fetish", "Nipples", "Pubic", "Vagina", "Scrotum", "Testicles", "Prostate", "Ejaculation", "Orgasm", "Climax", "Squirt", "Erection", "Kinky", "Upskirt", "Glory hole", "Strapon", "Sadomasochism", "Pegging", "Fisting", "Tribbing", "Scissoring"]
+# These words will be automatically removed from the prompt
+prompt_ignore_list = []
+# Choose whether or not ignored words are displayed to user
+display_ignored_words = "False"
+# These words will be added to the beginning of the negative prompt
+negative_prompt_prefix = []
+
+
+# the fallback channel defaults template for AIYA if nothing is set
+prompt_prefix = ""
+negative_prompt = "(worst quality:2), (low quality:2), (normal quality:2), lowres, easynegative, signature, watermark, username, cropped"
+data_model = "ZavyChromaXL"
+steps = 30
+max_steps = 100
+width = 832
+height = 1216
+guidance_scale = "6.0"
+sampler = "DPM++ 3M SDE"
+scheduler = "exponential"
+style = "None"
+highres_fix = "Disabled"
+clip_skip = 1
+hypernet = "None"
+hyper_multi = "0.85"
+lora = "None"
+lora_multi = "0.85"
+strength = "0.75"
+batch = "1,1"
+max_batch = "32,1"
+upscaler_1 = "ESRGAN_4x"

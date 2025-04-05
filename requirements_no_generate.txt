@@ -1,0 +1,8 @@
+py-cord
+python-dotenv
+requests
+pillow
+discord
+tomlkit
+urlextract
+gpt4all
